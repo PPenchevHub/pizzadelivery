@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GlobalStyle } from '../../globarStyles';
-import Hero from '../Hero';
-import PizzaList from '../Products/PizzaList';
-import SearchForm from '../Products/SearchForm';
+import Navbar from '../Navbar';
+import PizzaList from '../Products/Pizzas/PizzaList';
+import { ProductsContainer } from '../Products/ProductsElements';
+import SearchForm from '../Products/SearchForm/SearchForm';
+import Sidebar from '../Sidebar';
 
 
 
 const Pizzas = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+
+    const toggle=()=>{
+    setIsOpen(!isOpen);
+   }
+
     return (
-        <main>
+        <ProductsContainer>
         <GlobalStyle/>
-        <Hero/>
-
-        <SearchForm/>
+            <Navbar toggle={toggle}/>
+            <Sidebar  isOpen={isOpen} toggle= {toggle}/>
+        <SearchForm item="Pizza"/>
         <PizzaList/>
-
-
-        </main>
+        </ProductsContainer>
     )
 }
 
