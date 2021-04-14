@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled  from "styled-components"; 
 
 export const ProductsContainer= styled.div`
@@ -27,10 +28,10 @@ export const ProductImg = styled.img`
 export const ProductsHeading = styled.h1`
     font-size: clamp(2rem, 2.5vw, 3rem);
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 `;
 export const ProductTitle = styled.h2`
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.5rem;
 `;
 
@@ -39,20 +40,21 @@ export const ProductInfo = styled.div`
     justify-content:center;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 `;
 
 export const ProductPrice = styled.p`
-    margin-bottom: 1rem;
+   // margin-bottom: 1rem;
     font-size: 2rem;
 `;
 export const ProductButton = styled.button`
-    font-size: 1rem;
-    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
     border: none;
     background: #e31837;
-    transition: 0.2s ease-out;
+    color: #fff;
+    transition: 0.2rem ease-out;
     &:hover{
         background: #ffc500;
         transition: 0.2s ease-out;
@@ -63,7 +65,7 @@ export const ProductButton = styled.button`
 
 
 export const ProductDesc = styled.p`
-    margin-bottom: 1rem;
+   // margin-bottom: 1rem;
    
 `;
 
