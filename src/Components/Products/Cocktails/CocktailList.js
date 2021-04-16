@@ -16,7 +16,6 @@ const CocktailList = () => {
 
     }
     return (
-        <section>
              <ProductsContainer>
             <ProductWrapper>
                 {cocktails.map((product)=>{
@@ -33,10 +32,6 @@ const CocktailList = () => {
                 })}
             </ProductWrapper>
     </ProductsContainer>
-
-
-
-        </section>
     )
 }
 

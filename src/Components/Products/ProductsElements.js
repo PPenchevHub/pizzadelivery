@@ -16,7 +16,8 @@ export const ProductWrapper = styled.div`
 export const ProductCard = styled.div`
     margin: 0 2rem; 
     line-height: 2;
-    width: 300px;
+    justify-content:center;
+    text-align:center;
 `;
 
 export const ProductImg = styled.img`
